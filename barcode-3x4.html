@@ -13,11 +13,14 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand sticky-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
         <a class="navbar-brand" href="#"><img src="./images/logo.png" height="36"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Listing Tool</a>
                 </li>
@@ -37,7 +40,7 @@
         </div>
     </nav>
 
-    <h1>Print Barcodes - 3" x 4" Blank</h1>
+    <h1>Barcode Generator - 3" x 4" Blank</h1>
     <div id="barcodeInput">
         <form id="inputForm" action="#" onSubmit="return false;">
             Part Number: <input type="text" id="partNoInput" name="xinput" placeholder="P1891" onchange="myFunction()"
