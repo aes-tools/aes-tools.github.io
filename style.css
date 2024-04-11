@@ -1,0 +1,35 @@
+body {
+    background-color: lightgray!important;
+}
+
+.program-name {
+    font-weight: bold;
+}
+
+.header-text {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.img-profile {
+    max-height: 50vh;
+}
+
+.part-type {
+    border: 1px solid black;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    width: 75vw;
+}
+
+.part-listing.container {
+    background-color: lightgreen;
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 5px auto;
+}
+
+.case-selection {
+    padding: 10px;
+}

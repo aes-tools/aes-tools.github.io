@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="aes.ico">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <title>AES - Quick Listing Tool</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand sticky-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="./images/logo.png" height="36"></a>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Listing Tool</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="barcode-3x4.html">Barcodes - 3x4</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="barcode-1x3.html">Barcodes - 1x3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="barcode-4x8.html">Barcodes - 4x8</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="g-code-gen.html">G Code Generator</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container text-center case-selection">
+    <label for="case">Choose a case:</label>
+    <select name="case" id="case" onchange="showList()">
+      <option value="" selected disabled hidden></option>
+      <optgroup label="Hussmann">
+        <option value="hussmann.rl">RL</option>
+        <option value="hussmann.im">IM</option>
+      </optgroup>
+      <optgroup label="Tyler">
+        <option value="tyler.l6dl">L6DL</option>
+      </optgroup>
+    </select>
+  </div>
+
+  <div id="caseInfo">
+  </div>
+  <script src="parts.js"></script>
+  <script src="list.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./js/jquery-3.2.1.slim.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

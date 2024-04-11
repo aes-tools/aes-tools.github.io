@@ -1,0 +1,75 @@
+	h1 {
+		text-align: center;
+	}
+	header {
+		display: flex;
+		justify-content: space-around;
+		height: 100px;
+	}
+	
+	div#barcodeInput {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 1em;
+	}
+	
+	.print-me {
+		display: flex;
+		justify-content: center;
+	}
+	
+	canvas#barcode {
+		border: 1px solid black;
+		width: 25%;
+		border-radius: 10px;
+	}
+	
+	canvas {
+		aspect-ratio: 3 / 1;
+	}
+	
+
+@media print {
+
+	@page {
+		size: auto !important;
+	}
+    body * {
+        visibility: hidden;
+	  display: none;
+    }
+	
+	header * {
+		display: none;
+	}
+
+	* {
+	visibility: hidden;
+	}
+	
+	h1, #barcodeInput {
+		display: none;
+	}
+    .print-me, .print-me canvas {
+        visibility: visible;
+    }
+    .print-me {
+        position: absolute;
+        top: 5pt;
+        left: 0;
+        height: 75% !important;
+        width: 75% !important;
+    }
+    canvas#barcode {
+	  display: block;
+        width: 130pt;
+        height: 36pt;
+        overflow: hidden;
+	  margin-left:20pt;
+	  border: none;
+    }
+	
+	canvas {
+		aspect-ratio: auto;
+	}
+}

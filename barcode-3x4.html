@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AES - 3x4 Barcodes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="barcode.ico">
+    <link rel="stylesheet" href="style3x4.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand sticky-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="./images/logo.png" height="36"></a>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Listing Tool</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="barcode-3x4.html">Barcodes - 3x4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="barcode-1x3.html">Barcodes - 1x3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="barcode-4x8.html">Barcodes - 4x8</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="g-code-gen.html">G Code Generator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Print Barcodes - 3" x 4" Blank</h1>
+    <div id="barcodeInput">
+        <form id="inputForm" action="#" onSubmit="return false;">
+            Part Number: <input type="text" id="partNoInput" name="xinput" placeholder="P1891" onchange="myFunction()"
+                value="" style="font-size: 16px; width: 65%">
+        </form>
+        <button id="inputButton" onclick="myFunction()" onSubmit="return false;">Generate</button>
+    </div>
+    <div class="print-me">
+        <canvas id="barcode" class="print-me"></canvas>
+    </div>
+    <script src="JsBarcode.all.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery-3.2.1.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+        <!-- JsBarcode("#barcode", "P1891", {height: "36pt"}); -->
+        var partInput, part;
+
+        document.addEventListener('keydown', function (e) {
+            if (e.which === 13) myFunction();
+        })
+
+        const bcBody = document.getElementById("barcodeInput");
+
+        function myFunction() {
+            "use strict";
+            partInput = document.getElementById("inputForm"),
+                part = String(partInput.elements[0].value);
+
+            JsBarcode("#barcode", part, {
+                height: "18pt",
+                width: "2pt",
+                fontSize: "108pt",
+                textPosition: "top",
+                fontOptions: "bold"
+            });
+
+        }
+    </script>
+</body>
+
+</html>
