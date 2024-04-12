@@ -72,7 +72,14 @@
             partInput = document.getElementById("inputForm"),
                 part = String(partInput.elements[0].value);
 
-            JsBarcode("#barcode", part, { height: "36pt" });
+            JsBarcode("#barcode", part, {
+                height: "54pt",
+                width: "4pt",
+                fontSize: "144pt",
+                fontOptions: "bold",
+                textPosition: "top",
+                textMargin: 5
+            });
         }
     </script>
 </body>
