@@ -58,15 +58,15 @@
         position: absolute;
         top: 1pt;
         left: 0;
-        height: 75% !important;
-        width: 75% !important;
+        height: 90% !important;
+        width: 90% !important;
     }
     canvas#barcode {
 	  display: block;
-        width: 130pt;
-        height: 36pt;
+        width: 216pt;
+        height: 72pt;
         overflow: hidden;
-	  margin-left:20pt;
+	  margin-left:8.5%;
 	  border: none;
     }
 	

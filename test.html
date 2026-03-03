@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="aes.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>AES - Quick Listing Tool</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="./images/logo.png" height="36"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="navList">
+
+          </ul>
+        </div>
+      </nav>
+
+      <h1 id="casePageTitle"></h1>
+
+<!-- 
+  <div class="container text-center case-selection">
+    <label for="case">Choose a case:</label>
+    <select name="case" id="case" onchange="showList()">
+      <option value="" selected disabled hidden></option>
+      <optgroup label="Hussmann">
+        <option value="hussmann.rl">RL</option>
+        <option value="hussmann.im">IM</option>
+      </optgroup>
+      <optgroup label="Tyler">
+        <option value="tyler.l6dl">L6DL</option>
+      </optgroup>
+    </select>
+  </div> -->
+
+
+  <div id="caseInfo">
+  </div>
+  <script src="parts.js"></script>
+  <script src="newListingTool.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./js/jquery-3.2.1.slim.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

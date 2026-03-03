@@ -1,0 +1,85 @@
+body {
+    background-color: lightgray!important;
+}
+
+.program-name {
+    font-weight: bold;
+}
+
+.header-text {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.img-profile {
+    max-height: 50vh;
+}
+
+.part-type {
+    border: 1px solid black;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    width: 75vw;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.part-listing.container {
+    background-color: lightgreen;
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 5px auto;
+}
+.part-listing.container:hover {
+    background-color: white;
+}
+
+.case-selection {
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+}
+
+.btn-secondary {
+    background-color: #343a40!important;
+    border-color: #343a40!important;
+}
+
+.btn-secondary:hover {
+    background-color: lightgray!important;
+    color: black!important;
+}
+
+.dropdown .dropdown-menu {
+    background-color: #343a40!important;
+    color: white!important;
+}
+
+.dropdown-item {
+    color: lightgray!important;
+}
+
+.dropdown-item:hover {
+    color:#343a40!important;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold!important;
+}
+
+
+.row.part-listing.container:active {
+    position: relative;
+    animation-name: copied;
+    animation-duration: 0.25s;
+  }
+  
+  @keyframes copied {
+    0%   {background-color:green; left:0px; top:0px;}
+    100% {background-color:white; left:0px; top:0px;}
+  }

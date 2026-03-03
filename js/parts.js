@@ -1,48 +1,9 @@
 let make = {
     hussmann:
     {
-        asbml: {
-            handrail: {
-                firstProfile: ["/images/hussmann/asbml-hr.png",
-                    ["ASBML-8-Hr", "96\""]]
-            },
-            joints: {
-                firstProfile: ["/images/hussmann/asbml-hr-jt.png",
-                    ["ASBML-Hr-Jt", "1.5\""]]
-            }
-        },
-        ascms: {
-            front: {
-                firstProfile: ["/images/hussmann/ascms-fr.png",
-                    ["ASCMS-6-Fr", "72\""],
-                    ["ASCMS-8-Fr", "96\""],
-                    ["ASCMS-12-Fr", "144\""]]
-            },
-            toekick: {
-                firstProfile: ["/images/hussmann/ascms-tk.png",
-                    ["ASCMS-8-Tk", "96\""],
-                    ["ASCMS-12-Tk", "144\""]]
-            },
-            ends: {
-                firstProfile: ["/images/hussmann/ascms-cont-end.png",
-                    ["ASCMS-Left-Cont-End", "52.6188\" x 44.4563\""],
-                    ["ASCMS-Right-Cont-End", "52.6188\" x 44.4563\""],
-                    ["ASCMS-Left-Cont-End-Chrome", "52.6188\" x 44.4563\""],
-                    ["ASCMS-Right-Cont-End-Chrome", "52.6188\" x 44.4563\""]]
-            }
-        },
-        im: {
-            front: {
-                firstProfile: ["images/hussmann/im05-fr.jpg",
-                    ["IM05-Fr", "59.9375\""],
-                    ["IM05-Side-Fr", "59.9375\""]],
-                secondProfile: ["images/hussmann/rl-front.jpg",
-                    ["IM05-Hot-Case-Flat-Fr", "69\""]]
-            }
-        },
         rl: {
             front: {
-                firstProfile: ["/images/hussmann/rl-front.png",
+                firstProfile: ["/images/hussmann/rl-front.jpg",
                     ["RL-2-Fr", "62\""],
                     ["RL-2-Fac-Fr", "62\" - Has Factory End Tabs"],
                     ["RL-3-Fr", "92.5\""],
@@ -92,18 +53,17 @@ let make = {
                 fourthProfile: ["/images/hussmann/rl-front-pan-support.png",
                     ['RL-Front-Pan-Support', '30.437"']],
             }
-        }
-    },
-    tyler:
-    {
-        l6dl: {
-            colorband: {
-                firstProfile: ["/images/tyler/l6dl-cb.svg",
-                    ["L6DL-8-CB", "96\"", "/images/tyler/l6dl-cb.svg"]]
+        },
+        im: {
+            front: {
+                firstProfile: ["images/hussmann/im05-fr.jpg",
+                    ["IM05-Fr", "59.9375\""]],
+                secondProfile: ["images/hussmann/rl-front.jpg",
+                    ["IM05-Hot-Case-Flat-Fr", "69\""]]
             }
         }
     },
-    anthony:
+    tyler:
     {
         l6dl: {
             colorband: {
@@ -116,7 +76,6 @@ let make = {
 
 let parts = {
     front: "Fronts",
-    handrail: "Handrails",
     lwrFront: "Lower Fronts",
     colorband: "Color Bands",
     toekick: "Toekicks",

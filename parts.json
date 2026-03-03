@@ -1,0 +1,99 @@
+{
+    "hussmann":
+    {
+        "asbml": {
+            "handrail": {
+                "firstProfile": ["/images/hussmann/asbml-hr.png",
+                    ["ASBML-8-Hr", "96\""]]
+            },
+            "joints": {
+                "firstProfile": ["/images/hussmann/asbml-hr-jt.png",
+                    ["ASBML-Hr-Jt", "1.5\""]]
+            }
+        },
+        "ascms": {
+            "front": {
+                "firstProfile": ["/images/hussmann/ascms-fr.png",
+                    ["ASCMS-6-Fr", "72\""],
+                    ["ASCMS-8-Fr", "96\""],
+                    ["ASCMS-12-Fr", "144\""]]
+            },
+            "toekick": {
+                "firstProfile": ["/images/hussmann/ascms-tk.png",
+                    ["ASCMS-8-Tk", "96\""],
+                    ["ASCMS-12-Tk", "144\""]]
+            }
+        },
+        "im": {
+            "front": {
+                "firstProfile": ["images/hussmann/im05-fr.jpg",
+                    ["IM05-Fr", "59.9375\""],
+                    ["IM05-Side-Fr", "59.9375\""]],
+                "secondProfile": ["images/hussmann/rl-front.jpg",
+                    ["IM05-Hot-Case-Flat-Fr", "69\""]]
+            }
+        },
+        "rl": {
+            "front": {
+                "firstProfile": ["/images/hussmann/rl-front.png",
+                    ["RL-2-Fr", "62\""],
+                    ["RL-2-Fac-Fr", "62\" - Has Factory End Tabs"],
+                    ["RL-3-Fr", "92.5\""],
+                    ["RL-3-Fac-Fr", "92.5\" - Has Factory End Tabs"],
+                    ["RL-4-Fr", "123\""],
+                    ["RL-4-Fac-Fr", "123\" - Has Factory End Tabs"],
+                    ["RL-5-Fr", "153.25\""],
+                    ["RL-5-Fac-Fr", "153.25\" - Has Factory End Tabs"]]
+            },
+            "toekick": {
+                "firstProfile": ["/images/hussmann/rl-tk.jpg",
+                    ["RL-2-Tk", "62\""],
+                    ["RL-2-Fac-Tk", "62\" - Has Factory End Tabs"],
+                    ["RL-3-Tk", "92.5\""],
+                    ["RL-3-Fac-Tk", "92.5\" - Has Factory End Tabs"],
+                    ["RL-4-Tk", "123\""],
+                    ["RL-4-Fac-Tk", "123\" - Has Factory End Tabs"],
+                    ["RL-5-Tk", "153.25\""],
+                    ["RL-5-Fac-Tk", "153.25\" - Has Factory End Tabs"]]
+            },
+            "canopy": {
+                "firstProfile": ["/images/hussmann/rl-can.jpg",
+                    ["RL-2-Can", "62\""],
+                    ["RL-2-Fac-Can", "62\" - Has Factory End Tabs"],
+                    ["RL-3-Can", "92.5\""],
+                    ["RL-3-Fac-Can", "92.5\" - Has Factory End Tabs"],
+                    ["RL-4-Can", "123\""],
+                    ["RL-4-Fac-Can", "123\" - Has Factory End Tabs"],
+                    ["RL-5-Can", "153.25\""],
+                    ["RL-5-Fac-Can", "153.25\" - Has Factory End Tabs"]]
+            },
+            "interior": {
+                "firstProfile": ["/images/hussmann/rl-fr-ceiling.png",
+                    ["RL-2-Fr-Ceiling-OL", "62.0\""],
+                    ["RL-2-Front-Ceiling", "62.125\""],
+                    ["RL-3-Fr-Ceiling-OL", "92.5\""],
+                    ["RL-3-Front-Ceiling", "92.031\""],
+                    ["RL-4-Fr-Ceiling-OL", "123.0\""],
+                    ["RL-4-Front-Ceiling", "122.453\""],
+                    ["RL-5-Fr-Ceiling-OL", "153.25\""],
+                    ["RL-5-Front-Ceiling", "152.875\""]
+                ],
+                "secondProfile": ["/images/hussmann/rl-hc-rtnr.png",
+                    ["RL-HC-Rtnr", "30.575\""]],
+                "thirdProfile": ["/images/hussmann/rl-rear-hanger.png",
+                    ["RL-Rear-Hanger", "30.938\""]],
+                "fourthProfile": ["/images/hussmann/rl-front-pan-support.png",
+                    ["RL-Front-Pan-Support", "30.437\""]]
+            }
+        }
+    },
+    "tyler":
+    {
+        "l6dl": {
+            "colorband": {
+                "firstProfile": ["/images/tyler/l6dl-cb.svg",
+                    ["L6DL-8-CB", "96\"", "/images/tyler/l6dl-cb.svg"]]
+            }
+        }
+    }
+}
