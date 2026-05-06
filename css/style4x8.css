@@ -56,14 +56,14 @@
 
 		.print-me {
 			position: absolute;
-			top: -18pt;
-			left: 0;
-			height: 95% !important;
-			width: 95% !important;
+			top: -25pt;
+			/*left: 0;*/
+			height: 100% !important;
+			width: 100% !important;
 		}
 
 		canvas#barcode {
-			width: 565pt;
+			width: 620pt;
 			height: 290pt;
 			overflow: hidden;
 			margin-left: 0;

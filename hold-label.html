@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AES - 1x3 Barcodes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AES Parts for Job Barcode Generator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="barcode.ico">
-    <link rel="stylesheet" href="css/style1x3.css">
-    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+        <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hold-label.css">
+
 </head>
 
 <body>
@@ -24,13 +26,13 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Listing Tool</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="hold-label.html">Job Label - 3x4</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="barcode-3x4.html">Barcodes - 3x4</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="barcode-1x3.html">Barcodes - 1x3</a>
                 </li>
                 <li class="nav-item">
@@ -43,48 +45,25 @@
         </div>
     </nav>
 
-    <h1>Barcode Generator - 1" x 3" Blank</h1>
-    <div id="barcodeInput">
-        <form id="inputForm" action="#" onSubmit="return false;">
-            Part Number: <input type="text" id="partNoInput" name="xinput" placeholder="P1891" onchange="myFunction()"
-                value="" style="font-size: 16px; width: 65%">
-        </form>
-        <button id="inputButton" onclick="myFunction()" onSubmit="return false;">Generate</button>
+    <div class="controls">
+        Part Number: <input type="text" id="barcodeData" class="inputBox" placeholder="P1891" onchange="generate()"><br>
+        Job Name: <input type="text" id="appendText" class="inputBox" placeholder="Staters 57" onchange="generate()"><br>
+        Quantity: <input type="text" id="appendQty" class="inputBox" placeholder="5" onchange="generate()"><br>
+        <button onclick="generate()">Generate</button>
     </div>
-    <div class="print-me">
-        <canvas id="barcode" class="print-me"></canvas>
+
+    <div id="printArea" class="print-container">
+        <svg id="barcode"></svg>
+        <div id="extraText" class="label-text"></div>
+        <div id="qtyText" class="label-text"></div>
     </div>
+
     <script src="js/JsBarcode.all.min.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./js/jquery-3.2.1.slim.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script>
-        <!-- JsBarcode("#barcode", "P1891", {height: "36pt"}); -->
-        var partInput, part;
-
-        document.addEventListener('keydown', function (e) {
-            if (e.which === 13) myFunction();
-        })
-
-        const bcBody = document.getElementById("barcodeInput");
-        el.addEventListener("click", modifyText, false);
-
-        function myFunction() {
-            "use strict";
-            partInput = document.getElementById("inputForm"),
-                part = String(partInput.elements[0].value);
-
-            JsBarcode("#barcode", part, {
-                height: "54pt",
-                width: "4pt",
-                fontSize: "144pt",
-                fontOptions: "bold",
-                textPosition: "top",
-                textMargin: 5
-            });
-        }
-    </script>
+    <script src="js/holdLabelScript.js"></script>
 </body>
 
 </html>

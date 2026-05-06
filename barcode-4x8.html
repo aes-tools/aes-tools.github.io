@@ -24,6 +24,9 @@
                     <a class="nav-link" href="index.html">Listing Tool</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="hold-label.html">Job Label - 3x4</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="barcode-3x4.html">Barcodes - 3x4</a>
                 </li>
                 <li class="nav-item">
@@ -56,7 +59,7 @@
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script>
-        <!-- JsBarcode("#barcode", "P1891", {height: "36pt"}); -->
+        <!-- JsBarcode("#barcode", "P1891", {height: "72pt"}); -->
         var partInput, part;
 
         document.addEventListener('keydown', function (e) {
@@ -72,9 +75,9 @@
                 part = String(partInput.elements[0].value);
 
             JsBarcode("#barcode", part, {
-                height: "35pt",
-                width: "4pt",
-                fontSize: "108pt",
+                height: "75pt",
+                width: "10pt",
+                fontSize: "300pt",
                 textPosition: "top",
                 fontOptions: "bold"
             });

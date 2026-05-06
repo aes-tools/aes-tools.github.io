@@ -1,0 +1,96 @@
+/* Layout for the screen */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    margin: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.inputBox {
+    margin: 5px;
+}
+
+/* The Label Styling */
+.print-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Adjust based on your 3x4 needs */
+}
+
+.label-text {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+svg#barcode {
+    width:95%;
+}
+
+@media print {
+    /* Hide everything else */
+    body * {
+        visibility: hidden;
+    }
+
+    /* Set up the label dimensions */
+    @page {
+        size: auto;
+        margin: 0; /* Removes header/footer/margins for label printers */
+    }
+
+    .print-container, .print-container * {
+        visibility: visible;
+    }
+
+    .print-container {
+        position: fixed; /* Using fixed helps pin it to the page start */
+        top: 0;
+        left: 0;
+        width: 100vw;    /* Use the full width of the label */
+        height: 100vh;   /* Use the full height of the label */
+        
+        /* The "Centering" Magic */
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center; /* Vertical Center */
+        align-items: center;     /* Horizontal Center */
+        
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Ensure the barcode doesn't overflow the label width */
+    #barcode {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .controls {
+        display: none;
+    }
+}
+
