@@ -34,7 +34,9 @@ input {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
-    width: 300px; /* Adjust based on your 3x4 needs */
+    width: 4in; /* Adjust based on your 3x4 needs */
+    height: 3in;
+    justify-content: center;
 }
 
 .label-text {
